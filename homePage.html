@@ -22,19 +22,45 @@
 	    <meta name="msapplication-TileColor" content="faviconit\#FFFFFF">
 	    <meta name="msapplication-TileImage" content="faviconit\favicon-144.png">
 	    <meta name="msapplication-config" content="faviconit\browserconfig.xml">
+      <link href="styles.css" rel="stylesheet">
    </head>
 
    <body>
-     <header>
-      <img src="img\osa_logo3.jpg" alt="OSA logo">
-      <h1>Ohio Student Association</h1>
-      <!-- header -->
-      <ul>
-        <li> <a href="aboutUs.html">About Us</a> </li>
-        <li> <a href="programs.html">Programs</a> </li>
-        <li> <a href="support.html">Support</a> </li>
-        <li> <a href="vote.html">Register to Vote</a> </li>
-      </ul>
-    </header>
+     <!-- header -->
+     <div class="nav">
+        <div class="container">
+           <header>
+              <nav class="top-bar">
+                 <img class="logo" src="img\osa_logo3.jpg" alt="OSA logo">
+                 <h1 class="header">Ohio Student Association</h1>
+                 <span>
+                   <div class="dropdown">
+                      <button class="dropbtn">About Us</button>
+                      <div class="dropdown-content">
+                         <a href="missionAndHistory.html">Mission & History</a>
+                         <a href="staff.html">Staff</a>
+                         <a href="contactUs.html">Contact Us</a>
+                      </div>
+                   </div>
+                   <div class="dropdown">
+                      <button class="dropbtn">Programs</button>
+                      <div class="dropdown-content">
+                         <a href="higherEdNotDebt.html">Higher Ed Not Debt</a>
+                         <a href="EndZeroTolerance.html">End Zero Tolerance</a>
+                         <a href="fellowship2017.html">2017 Fellowship</a>
+                      </div>
+                   </div>
+                   <div class="dropdown">
+                      <button class="dropbtn">Support</button>
+                      <div class="dropdown-content">
+                         <a href="donate.html">Donate</a>
+                         <a href="monthlySupporter.html">Monthly Supporter</a>
+                      </div>
+                   </div>
+                    <a href="vote.html">Register to Vote</a>
+                 </span>
+           </header>
+        </div>
+     </div>
    </body>
 </html>
