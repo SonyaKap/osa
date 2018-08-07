@@ -74,7 +74,7 @@ a:hover {
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
     text-align:center;
-    background: #c90619;
+    background: #bf1324;
 }
 
 /* Links inside the dropdown */
@@ -84,11 +84,39 @@ a:hover {
     display: block;
 }
 
-/* Change color of dropdown links on hover */
+/* Underline/ Change color of dropdown links on hover */
 .dropdown-content a:hover {text-decoration:underline;}
 
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {display: block;}
 
-/* Change the background color of the dropdown button when the dropdown content is shown */
+/* Underline the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {text-decoration:underline;}
+
+body {
+    background-color: #bcbcbc;
+    background-image: url("img/dark_gray_background1.jpg");
+    background-position: left top;
+    background-size: auto;
+    background-repeat: repeat;
+    background-attachment: fixed;
+}
+
+/* Formatting the footer*/
+footer {
+    background-color: #fff;
+    font-size: 12px;
+    margin-top: 50px auto;
+    margin-bottom:100px;
+    margin-left:auto;
+    margin-right:auto;
+    height: 500px;
+    width:1020px;
+}
+
+ .column {
+    width:30%;
+    float:left;
+    margin-left: 15px;
+    margin-right:15px;
+ }

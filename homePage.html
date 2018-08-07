@@ -22,7 +22,23 @@
 	    <meta name="msapplication-TileColor" content="faviconit\#FFFFFF">
 	    <meta name="msapplication-TileImage" content="faviconit\favicon-144.png">
 	    <meta name="msapplication-config" content="faviconit\browserconfig.xml">
+
+      <!--Style Sheet-->
       <link href="styles.css" rel="stylesheet">
+
+      <!--Facebook plug-in Javascript-->
+      <div id="fb-root"></div>
+         <script>
+            (function(d, s, id) {
+               var js, fjs = d.getElementsByTagName(s)[0];
+               if (d.getElementById(id)) return;
+               js = d.createElement(s); js.id = id;
+               js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.1';
+               fjs.parentNode.insertBefore(js, fjs);
+               }
+            (document, 'script', 'facebook-jssdk'));
+        </script>
+
    </head>
 
    <body>
@@ -62,5 +78,28 @@
            </header>
         </div>
      </div>
+
+     <footer>
+       <div class="widget-area">
+        <div class="column">
+          <div class="info">
+           <p>
+             82 E 16 Avenue
+             <br>
+             Columbus, Ohio 43210
+             <br>
+             Phone: 513-767-7264
+           </p>
+         </div>
+        </div>
+        <div class="column">
+           <div class="fb-page" data-href="https://www.facebook.com/OhioStudentAssociation" data-tabs="timeline" data-width="300" data-height="450" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/OhioStudentAssociation" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/OhioStudentAssociation">Ohio Student Association</a></blockquote></div>
+           <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FOhioStudentAssociation&tabs=timeline&width=300&height=450&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="300" height="450" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+        </div>
+        <div class="column" id="twitter-widget-holder">
+           <a class="twitter-timeline" data-width="300" data-height="500" href="https://twitter.com/OHIOStudents?ref_src=twsrc%5Etfw">Tweets by OHIOStudents</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+      </div>
+     </footer>
    </body>
 </html>
