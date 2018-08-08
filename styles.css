@@ -1,8 +1,23 @@
-/* Style for the header*/
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
 
+body {
+  margin:0;
+  padding:0;
+  height:100%;
+  background-color: #bcbcbc;
+  background-image: url("img/dark_gray_background1.jpg");
+  background-position: left top;
+  background-size: auto;
+  background-repeat: repeat;
+  background-attachment: fixed;
+}
+
+
+/* Style for the header*/
 .header {
-  margin-left: 0px;
-  margin-right: auto;
   height: auto;
   width: 300px;
   align-items: flex-end;
@@ -12,6 +27,8 @@
   font-size: 30px;
   font-family:Arial, sans-serif;
   font-weight:lighter;
+  display:block;
+  padding:10px;
 
 }
 .logo {
@@ -34,7 +51,7 @@ nav {
 /*non-dropdown buttons*/
 nav a {
   text-decoration: none;
-  font-size:.8em;
+  font-size:20px;
   color: white;
   text-transform: uppercase;
   box-sizing: border-box;
@@ -93,30 +110,51 @@ a:hover {
 /* Underline the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {text-decoration:underline;}
 
-body {
-    background-color: #bcbcbc;
-    background-image: url("img/dark_gray_background1.jpg");
-    background-position: left top;
-    background-size: auto;
-    background-repeat: repeat;
-    background-attachment: fixed;
+
+/* Body */
+
+.right-column {
+    /* background:orange; */
+    height:100%;
+    width:360px;
+    float:right;
+}
+.widget {
+  padding:10px;
+  border-radius:15px;
+  align:center;
+  background:white;
+  position:relative;
+  margin:15px;
+
+}
+
+#body {
+   /* padding:10px;
+   padding-bottom:100px;
+   background:green; */
+}
+.left-column {
+  background:white;
+  position:relative;
+  height:auto;
+  width: auto;
+  float:right;
+  margin:15px;
+  padding:20px;
+  border-radius:15px;
+
 }
 
 /* Formatting the footer*/
 footer {
     background-color: #fff;
     font-size: 12px;
-    margin-top: 50px auto;
-    margin-bottom:100px;
-    margin-left:auto;
-    margin-right:auto;
-    height: 500px;
-    width:1020px;
+    height: 100px;
+    position:absolute;
+    bottom:0px;
+    border-radius:15px;
+    width:1000px;
+    padding: 1rem;
+    background-color: #efefef;
 }
-
- .column {
-    width:30%;
-    float:left;
-    margin-left: 15px;
-    margin-right:15px;
- }
